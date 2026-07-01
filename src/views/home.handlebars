@@ -1,0 +1,12 @@
+<h1>Lista de productos estática</h1>
+<ul>
+    {{#each products}}
+        <li>
+            <strong>
+                {{this.title}}
+            </strong> - ${{this.price}} (ID: {{this.id}})
+        </li>
+    {{else}}
+        <li>No hay productos</li>
+    {{/each}}
+</ul>

@@ -1,0 +1,15 @@
+<h1>Productos en tiempo real</h1>
+
+<fieldset style="width: 300px; margin-bottom: 20px">
+    <legend>Cargar Producto</legend>
+    <form id="prodForm">
+        <input type="text" id="title" placeholder="Título" required><br><br>
+        <input type="number" id="price" placeholder="Precio" required><br><br>
+        <button type="submit">Agregar</button>
+    </form>
+</fieldset>
+
+<ul id="realTimeList"></ul>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTime.js"></script>
